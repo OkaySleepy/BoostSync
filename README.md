@@ -4,21 +4,26 @@
   <h1>BoostSync</h1>
 
   <p><strong>Reward your Discord Nitro boosters in Minecraft — automatically, and only when they're actually boosting.</strong></p>
+    </a>
 
   <p>
     Secure Discord account linking, automatic booster verification, temporary rank synchronization,
     seasonal rewards, and configurable renewals for Spigot and Paper servers.
+      </a>
   </p>
 
   <!-- Modrinth -->
   <p>
     <a href="https://modrinth.com/plugin/boostsync#download">
+        </a>
       <img src="https://img.shields.io/modrinth/dt/boostsync?style=for-the-badge&logo=modrinth&label=Downloads&color=1bd96a" alt="Modrinth Downloads">
     </a>
     <a href="https://modrinth.com/plugin/boostsync/versions">
+        </a>
       <img src="https://img.shields.io/modrinth/v/boostsync?style=for-the-badge&logo=modrinth&label=Version&color=1565c0" alt="Latest Version">
     </a>
     <a href="https://modrinth.com/plugin/boostsync">
+        </a>
       <img src="https://img.shields.io/badge/Modrinth-BoostSync-1bd96a?style=for-the-badge&logo=modrinth" alt="View on Modrinth">
     </a>
   </p>
@@ -26,12 +31,15 @@
   <!-- GitHub -->
   <p>
     <a href="https://github.com/OkaySleepy/BoostSync/releases">
+        </a>
       <img src="https://img.shields.io/github/downloads/OkaySleepy/BoostSync/total?style=for-the-badge&logo=github&label=Downloads" alt="GitHub Downloads">
     </a>
     <a href="https://github.com/OkaySleepy/BoostSync/releases/latest">
+        </a>
       <img src="https://img.shields.io/github/v/release/OkaySleepy/BoostSync?style=for-the-badge&logo=github&label=Version" alt="Latest Version">
     </a>
     <a href="https://github.com/OkaySleepy/BoostSync">
+        </a>
       <img src="https://img.shields.io/badge/GitHub-BoostSync-181717?style=for-the-badge&logo=github" alt="View on GitHub">
     </a>
   </p>
