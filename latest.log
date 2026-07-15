@@ -1,0 +1,121 @@
+[10:39:52] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10:39:53] [ServerMain/INFO]: Loaded 7 recipes
+[10:39:55] [Server thread/INFO]: Starting minecraft server version 1.19.4
+[10:39:55] [Server thread/INFO]: Loading properties
+[10:39:56] [Server thread/INFO]: This server is running Paper version git-Paper-550 (MC: 1.19.4) (Implementing API version 1.19.4-R0.1-SNAPSHOT) (Git: 483368e on ver/1.19.4)
+[10:39:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:39:56] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:39:56] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[10:39:57] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[10:39:57] [Server thread/INFO]: Default game type: SURVIVAL
+[10:39:57] [Server thread/INFO]: Generating keypair
+[10:39:57] [Server thread/INFO]: Starting Minecraft server on 0.0.0.0:19145
+[10:39:57] [Server thread/INFO]: Using epoll channel type
+[10:39:57] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[10:39:57] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[10:39:58] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'ValkorSync-1.0.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.21
+	at org.bukkit.craftbukkit.v1_19_R3.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:382) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:119) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.loadPlugins(CraftServer.java:431) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[10:39:58] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.9.2-SNAPSHOT
+[10:39:58] [Server thread/INFO]: [ViaVersion] ViaVersion 5.9.2-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[10:40:00] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[10:40:00] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[10:40:00] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[10:40:01] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.9.2-SNAPSHOT
+[10:40:01] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.12.1
+[10:40:04] [Server thread/INFO]: [NBTAPI] Loading server plugin NBTAPI v2.15.7
+[10:40:04] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_19_R3! Trying to find NMS support
+[10:40:04] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_19_R3' loaded!
+[10:40:04] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'NBTAPI' to create a bStats instance!
+[10:40:04] [Server thread/INFO]: [ShieldCore] Loading server plugin ShieldCore v2.7.13
+[10:40:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:40:04] [Server thread/INFO]: Preparing level "world"
+[10:40:05] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[10:40:05] [Thread-6/INFO]: [NBTAPI] [NBTAPI] The NBT-API seems to be up-to-date!
+[10:40:05] [Server thread/INFO]: Time elapsed: 313 ms
+[10:40:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[10:40:05] [Server thread/INFO]: Time elapsed: 121 ms
+[10:40:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[10:40:05] [Server thread/INFO]: Time elapsed: 72 ms
+[10:40:05] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.9.2-SNAPSHOT
+[10:40:05] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.19.4 (762)
+[10:40:05] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.9.2-SNAPSHOT
+[10:40:06] [Server thread/INFO]: [packetevents] Enabling packetevents v2.12.1
+[10:40:06] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[10:40:06] [Server thread/INFO]: [NBTAPI] Enabling NBTAPI v2.15.7
+[10:40:06] [Server thread/INFO]: [NBTAPI] Checking bindings...
+[10:40:06] [Server thread/INFO]: [NBTAPI] All Classes were able to link!
+[10:40:06] [Server thread/INFO]: [NBTAPI] All Methods were able to link!
+[10:40:06] [Server thread/INFO]: [NBTAPI] Running NBT reflection test...
+[10:40:06] [Server thread/INFO]: [NBTAPI] Success! This version of NBT-API is compatible with your server.
+[10:40:06] [Server thread/INFO]: [ShieldCore] Enabling ShieldCore v2.7.13
+[10:40:06] [Server thread/INFO]: [ShieldCore]                                                           
+[10:40:06] [Server thread/INFO]: [ShieldCore]                                                           
+[10:40:06] [Server thread/INFO]: [ShieldCore]      █████  ███████ ███████                               
+[10:40:06] [Server thread/INFO]: [ShieldCore]     ██   ██ ██      ██             ShieldCore    
+[10:40:06] [Server thread/INFO]: [ShieldCore]     ███████ █████   █████            Made by sabinm0o       
+[10:40:06] [Server thread/INFO]: [ShieldCore]     ██   ██ ██      ██             Rewritten by laxel    
+[10:40:06] [Server thread/INFO]: [ShieldCore]     ██   ██ ███████ ██                                    
+[10:40:06] [Server thread/INFO]: [ShieldCore]                                                           
+[10:40:06] [Server thread/INFO]: [ShieldCore]                                                           
+[10:40:06] [Server thread/INFO]: [ShieldCore] Detected Paper 1.19.4
+[10:40:06] [Server thread/INFO]: [ShieldCore] Registering Permissions
+[10:40:06] [Server thread/INFO]: [ShieldCore] Loading Data Storage
+[10:40:07] [packetevents-update-check-thread/INFO]: [packetevents] There is an update available for PacketEvents! Your build: (2.12.1) | Latest release: (2.12.2)
+[10:40:07] [Server thread/INFO]: [ShieldCore] Loading Config
+[10:40:07] [pool-14-thread-1/WARN]: [ShieldCore] Couldn't check GitHub for release updates! - https://api.github.com/repos/laxel/ShieldCore/releases
+[10:40:11] [Server thread/INFO]: [ShieldCore] Loading Translations
+[10:40:11] [Server thread/INFO]: [ShieldCore] da_dk, de_at, de_ch, de_de, 
+[10:40:11] [Server thread/INFO]: [ShieldCore] en_gb, en_us, es_es, fr_fr, 
+[10:40:11] [Server thread/INFO]: [ShieldCore] it_it, ko_kr, pl_pl, pt_br, 
+[10:40:11] [Server thread/INFO]: [ShieldCore] ro_ro, ru_ru, tr_tr, uk_ua, 
+[10:40:11] [Server thread/INFO]: [ShieldCore] vi_vn, zh_cn
+[10:40:11] [Server thread/INFO]: [ShieldCore] Loaded 18 translations.
+[10:40:11] [Server thread/INFO]: [ShieldCore] Loading Metrics
+[10:40:11] [Server thread/INFO]: [ShieldCore] Starting LaxelGuard Network Protection...
+[10:40:11] [Server thread/INFO]: [ShieldCore] Initializing LaxelGuard Network Protection Engine...
+[10:40:12] [Server thread/INFO]: [ShieldCore] Configuration reloaded in 71ms.
+[10:40:12] [Server thread/INFO]: [ShieldCore] Loaded 0 blacklist entries.
+[10:40:12] [Server thread/INFO]: [ShieldCore] Registered 23 detection modules.
+[10:40:12] [Server thread/INFO]: [ShieldCore] Netty leak sentry installed (level=SIMPLE).
+[10:40:12] [Server thread/INFO]: [ShieldCore] TickProcessor started (processing packets tick-accurately).
+[10:40:12] [Server thread/INFO]: [dev.laxelguard.hub.HubService] ShieldCore Hub integration disabled — running standalone.
+[10:40:12] [Server thread/INFO]: [ShieldCore] LaxelGuard Network Engine Enabled Successfully!
+[10:40:12] [Server thread/INFO]: [ShieldCore] Done.
+[10:40:12] [Server thread/INFO]: Running delayed init tasks
+[10:40:12] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[10:40:12] [Server thread/INFO]: [ShieldCore] Netty pipeline injector armed and listening (injected 1 server sockets after 1 attempts).
+[10:40:12] [Server thread/INFO]: Done (16.916s)! For help, type "help"
+[10:40:12] [Server thread/INFO]: Timings Reset
+[10:40:13] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
+[10:43:21] [User Authenticator #0/INFO]: UUID of player SleepyDN is ea8563cf-c9f4-45d8-ba7c-c33c19fde15a
+[10:43:22] [Server thread/INFO]: SleepyDN joined the game
+[10:43:22] [Server thread/INFO]: SleepyDN[/82.78.22.180:57598] logged in with entity id 188 at ([world]-88.5, 72.0, 63.5)
+[10:43:24] [Server thread/INFO]: SleepyDN lost connection: Disconnected
+[10:43:24] [Server thread/INFO]: SleepyDN left the game
+[10:43:26] [User Authenticator #0/INFO]: UUID of player SleepyDN is ea8563cf-c9f4-45d8-ba7c-c33c19fde15a
+[10:43:26] [Server thread/INFO]: SleepyDN joined the game
+[10:43:26] [Server thread/INFO]: SleepyDN[/82.78.22.180:57602] logged in with entity id 234 at ([world]-88.5, 72.0, 63.5)
+[10:43:27] [Server thread/INFO]: SleepyDN lost connection: Disconnected
+[10:43:28] [Server thread/INFO]: SleepyDN left the game
+[10:43:31] [User Authenticator #0/INFO]: UUID of player SleepyDN is ea8563cf-c9f4-45d8-ba7c-c33c19fde15a
+[10:43:32] [Server thread/INFO]: SleepyDN lost connection: Disconnected
+[10:43:38] [Server thread/INFO]: SleepyDN left the game
+[10:43:38] [Server thread/INFO]: Server Plugins (6):
+[10:43:38] [Server thread/INFO]: Bukkit Plugins:
+[10:43:38] [Server thread/INFO]:  - NBTAPI, packetevents, ShieldCore, ValkorSync, ViaBackwards, ViaVersion
+[10:43:38] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[10:43:38] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7645ms or 152 ticks behind
+[10:45:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5101ms or 102 ticks behind

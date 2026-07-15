@@ -1,0 +1,135 @@
+#  ____                  _     ____
+# | __ )  ___   ___  ___| |_  / ___| _   _ _ __   ___
+# |  _ \ / _ \ / _ \/ __| __| \___ \| | | | '_ \ / __|
+# | |_) | (_) | (_) \__ \ |_   ___) | |_| | | | | (__
+# |____/ \___/ \___/|___/\__| |____/ \__, |_| |_|\___|
+#                                    |___/
+#
+#                 B o o s t S y n c
+# -----------------------------------------------------------------------------
+#  Developed & Managed by: SleepyDN
+#  Email:   sleepyxemail@gmail.com
+#  GitHub:  https://github.com/OkaySleepy
+#  Project: https://github.com/Mc-MapLabs/BoostSync
+#  Discord: @OkaySleepyX
+# -----------------------------------------------------------------------------
+
+
+# =============================================================================
+#  DISCORD
+#  Connects BoostSync to your server's bot. All four IDs are required.
+# =============================================================================
+discord:
+  # Your Discord bot token (Bot -> Reset Token in the Developer Portal).
+  token: "YOUR_BOT_TOKEN_HERE"
+
+  # The ID of your Discord server (guild).
+  guild-id: "YOUR_GUILD_ID_HERE"
+
+  # The ID of the role Discord gives to server boosters.
+  booster-role-id: "YOUR_BOOSTER_ROLE_ID_HERE"
+
+  # The channel where players paste their verification code.
+  # Codes sent in any other channel are ignored.
+  verification-channel-id: "YOUR_CHANNEL_ID_HERE"
+
+  cache:
+    # How often (seconds) to refresh the cached guild and booster role.
+    refresh-interval: 300
+
+
+# =============================================================================
+#  SEASON
+#  The one-time rewards below can be claimed once per season. Increase this
+#  number to start a fresh season and let everyone claim again.
+# =============================================================================
+season: 1
+
+
+# =============================================================================
+#  BOOSTER RANK
+#  A temporary rank granted on boost. BoostSync re-checks every booster on the
+#  interval below: still boosting -> the rank is renewed; stopped boosting ->
+#  the rank expires and is removed. Nothing is stacked or granted twice.
+# =============================================================================
+rank:
+  # How long the rank lasts before it must be renewed, in days.
+  duration-days: 7
+
+  # How often (minutes) to re-check boosters and renew or expire ranks.
+  check-interval-minutes: 30
+
+  # Commands run to GRANT the rank. {player} = name, {uuid} = UUID.
+  grant-commands:
+    - "lp user {player} parent add booster"
+
+  # Commands run to REMOVE the rank once it expires.
+  expire-commands:
+    - "lp user {player} parent remove booster"
+
+
+# =============================================================================
+#  REWARDS
+#  One-time bonus handed out the first time a player claims each season.
+#  The rank above is separate and renews on its own.
+# =============================================================================
+rewards:
+  # {player} = name, {uuid} = UUID. Run from console.
+  commands:
+    - "give {player} diamond 64"
+    - "eco give {player} 10000"
+
+
+# =============================================================================
+#  VERIFICATION
+#  First-time linking uses a one-time code pasted into Discord. After a player
+#  is linked, /booster re-checks them instantly with no code needed.
+# =============================================================================
+verification:
+  # How long (seconds) a verification code stays valid.
+  code-expiry: 300
+
+  # Cooldown (seconds) between uses of /booster.
+  command-cooldown: 60
+
+  # How often (seconds) to clear out unused, expired codes.
+  cleanup-interval: 120
+
+
+# =============================================================================
+#  STORAGE
+# =============================================================================
+database:
+  # File that stores linked accounts, seasons, and rank expiries.
+  file: "booster_data.yml"
+
+  # Auto-save interval in seconds (0 to disable).
+  auto-save-interval: 300
+
+
+# =============================================================================
+#  MESSAGES
+#  Placeholders: {prefix} {player} {code} {days}
+# =============================================================================
+prefix: "&7[&#5865F2Boost&7]"
+
+messages:
+  # Success
+  boost-rewards: "{prefix} &aBoost verified! You received your rewards and the Booster rank for {days} days."
+  boost-renewed: "{prefix} &aBoost verified! Your Booster rank has been renewed for another {days} days."
+  code-generated: "{prefix} &eYour verification code: &f{code}"
+  code-instructions: "{prefix} &ePaste your code in the #verify channel on Discord to link your account."
+
+  # Errors
+  not-boosting: "{prefix} &cYou're not boosting our Discord server, so your Booster rank won't be renewed."
+  verification-pending: "{prefix} &eYou already have a code waiting. Paste it in the Discord #verify channel."
+  cooldown: "{prefix} &cPlease wait before using this command again!"
+  no-permission: "{prefix} &cYou don't have permission to use this command!"
+  bot-offline: "{prefix} &cThe Discord bot is currently offline. Please try again later."
+
+  # Admin
+  reload-success: "{prefix} &aConfiguration reloaded successfully!"
+  reload-failed: "{prefix} &cReload failed! Check the console for errors."
+
+  # Bypass
+  bypass-used: "{prefix} &7Bypass permission detected, skipping checks."

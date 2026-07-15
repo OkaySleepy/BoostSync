@@ -1,0 +1,12 @@
+com\boostsync\BoostSync.class
+com\boostsync\manager\DataManager$BoosterData.class
+com\boostsync\commands\BoosterCommand.class
+com\boostsync\commands\BoostSyncCommand.class
+com\boostsync\utils\MessageUtil.class
+com\boostsync\manager\VerificationManager.class
+com\boostsync\tasks\RankTask.class
+com\boostsync\discord\DiscordBot.class
+com\boostsync\tasks\CleanupTask.class
+com\boostsync\manager\VerificationManager$VerificationData.class
+com\boostsync\manager\DataManager.class
+com\boostsync\manager\RewardManager.class

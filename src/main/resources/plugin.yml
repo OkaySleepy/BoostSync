@@ -1,0 +1,41 @@
+name: BoostSync
+version: '1.0.0'
+main: com.boostsync.BoostSync
+api-version: '1.20'
+author: SleepyDN
+description: Reward your Discord Nitro boosters in-game with automated, verified rewards.
+load: POSTWORLD
+
+commands:
+  booster:
+    description: Verify your Discord boost and claim your booster rewards
+    usage: /<command>
+    aliases: [boost, boostreward]
+    permission: boostsync.use
+  boostsync:
+    description: Admin commands for BoostSync
+    usage: /<command> [reload|help]
+    permission: boostsync.admin
+
+permissions:
+  boostsync.use:
+    description: Allows using the /booster command
+    default: true
+  boostsync.bypass:
+    description: Bypass all checks (season limit, cooldown)
+    default: false
+  boostsync.bypass.cooldown:
+    description: Bypass the command cooldown
+    default: false
+  boostsync.bypass.onetime:
+    description: Claim season rewards again (bypass the once-per-season limit)
+    default: false
+  boostsync.admin:
+    description: Admin permission for BoostSync (includes all permissions)
+    default: op
+    children:
+      boostsync.reload: true
+      boostsync.bypass: true
+  boostsync.reload:
+    description: Reload the plugin configuration
+    default: op
