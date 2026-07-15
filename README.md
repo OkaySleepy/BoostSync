@@ -86,34 +86,24 @@ expires.
 
 ------------------------------------------------------------------------
 
-## How it works
+```mermaid
+flowchart LR
 
-**1. A player boosts your Discord and runs `/booster`.**
+A["Player runs /booster"] --> B["Generate verification code"]
+B --> C["Player sends code in Discord"]
+C --> D{"Discord Bot"}
 
-The first time, BoostSync gives them a six-character code and asks them
-to paste it in your verification channel.
+D -->|Booster| E["Link Account"]
+E --> F["Give Rewards"]
+F --> G["Grant Temporary Rank"]
+G --> H["Automatic Sync Task"]
 
-**2. The bot verifies the boost.**
+H --> I{"Still Boosting?"}
+I -->|Yes| J["Renew Rank"]
+I -->|No| K["Rank Expires"]
 
-If the player has your configured Booster role, their account is linked,
-seasonal rewards are granted, and a temporary Booster rank is applied.
-
-**3. Automatic synchronization.**
-
-Every configured interval (30 minutes by default), BoostSync checks
-linked players: - Still boosting? The temporary rank is renewed. - No
-longer boosting? The rank expires automatically after its configured
-duration.
-
-**4. Manual refresh.**
-
-Already-linked players can run `/booster` anytime to instantly refresh
-their status.
-
-**5. Seasonal rewards.**
-
-Rewards are only granted once per season. Changing the configured season
-resets eligibility.
+J --> H
+```
 
 ------------------------------------------------------------------------
 
